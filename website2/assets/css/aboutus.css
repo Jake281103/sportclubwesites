@@ -1,0 +1,60 @@
+/****** 
+    About Us Section
+******/
+
+#about-us {
+  background-color: #090909 !important;
+  color: #fff;
+  padding: 60px 0;
+}
+
+#about-us h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#about-us h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#about-us .lead {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+#about-us .card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #212121;
+}
+
+#about-us .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#about-us .team-member img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#about-us .team-member img:hover {
+  transform: scale(1.1);
+}
+
+#about-us .btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+#about-us .btn-success:hover {
+  background-color: #218838;
+}

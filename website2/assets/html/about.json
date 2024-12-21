@@ -1,0 +1,50 @@
+{
+    "aboutUs": {
+        "title": "About Us",
+        "description": "Discover our story, meet our team, and explore the values that drive our sports club.",
+        "journey": {
+            "title": "Our Journey",
+            "content1": "Since our founding in 2020, our sports club has been a beacon for fitness enthusiasts, aspiring athletes, and families alike. Our mission is to empower individuals to achieve their best selves, both physically and mentally.",
+            "content2": "From state-of-the-art facilities to a welcoming community atmosphere, we’re dedicated to making fitness accessible for everyone.",
+            "image": "../../dist/img/aboutus/img1.png"
+        }
+    },
+    "visionMissionValues": {
+        "vision": {
+            "title": "Our Vision",
+            "content": "To inspire a healthy and active lifestyle for people of all ages through engaging sports programs and fitness activities."
+        },
+        "mission": {
+            "title": "Our Mission",
+            "content": "To foster community wellness by providing top-tier facilities, expert guidance, and a welcoming environment."
+        },
+        "values": {
+            "title": "Our Values",
+            "content": "We believe in teamwork, integrity, and continuous improvement as the foundation for personal and community success."
+        }
+    },
+    "team": {
+        "title": "Meet Our Team",
+        "subtitle": "A group of passionate and experienced professionals dedicated to your success.",
+        "members": [
+            {
+                "name": "Alex Johnson",
+                "role": "Head Coach",
+                "description": "A seasoned coach with over 15 years of experience in training athletes across multiple disciplines.",
+                "image": "../../dist/img/aboutus/trainer1.png"
+            },
+            {
+                "name": "Sarah Williams",
+                "role": "Fitness Trainer",
+                "description": "Specializes in personalized fitness programs and nutrition guidance for a balanced lifestyle.",
+                "image": "../../dist/img/aboutus/trainer2.png"
+            },
+            {
+                "name": "Michael Lee",
+                "role": "Yoga Instructor",
+                "description": "A certified yoga instructor with expertise in mindfulness and flexibility training.",
+                "image": "../../dist/img/aboutus/trainer3.png"
+            }
+        ]
+    }
+}

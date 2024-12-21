@@ -1,0 +1,134 @@
+/******
+BG Overlay Section Styling 
+******/
+.hero-section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../dist/img/bgoverlay.png") no-repeat center center/cover;
+  color: #fff;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-title {
+  font-weight: 700;
+  color: #007bff;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  color: #fbfb00;
+}
+
+/******
+Filter Section Styling 
+******/
+.filter-section {
+  background: #090909;
+}
+
+.filter-form {
+  border: 1px solid #007bff;
+}
+
+.section-title {
+  color: #007bff;
+  letter-spacing: 2.5px;
+  font-size: var(--h1-f-s);
+}
+
+.section-description {
+  color: #fbfb00;
+  letter-spacing: 2px;
+  font-size: var(--h3-f-s);
+}
+
+.form-label {
+  color: #d2b48c;
+}
+
+.form-control,
+.form-select {
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+}
+
+/******
+Join Section Styling 
+******/
+.join-section {
+  background: linear-gradient(to bottom, #090909, #1c1c1c);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.section-description {
+  color: #d2b48c;
+  font-size: 1.2rem;
+}
+
+.highlight-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.highlight-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlight-list li {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #d2b48c;
+}
+
+.highlight-list i {
+  margin-right: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}

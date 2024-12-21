@@ -1,0 +1,381 @@
+/*---------------------------------------
+  HERO
+-----------------------------------------*/
+
+.hero {
+  position: relative;
+  background-image: url("../public/images/hero-bg.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 100vh;
+  position: relative;
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero .bg-overlay {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text h1 {
+  position: relative;
+  z-index: 100;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.hero-text h6 {
+  position: relative;
+  z-index: 100;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.custom-btn {
+  position: relative;
+  z-index: 100;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments for Hero */
+@media (max-width: 1199px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text h6 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-text h6 {
+    font-size: 1rem;
+  }
+  .hero {
+    padding: 0 30px; /* More space on mobile */
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h6 {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 50px 20px;
+  }
+
+  .hero-text h1,
+  .hero-text h6 {
+    margin: 10px 0; /* Adjust margins for smaller screens */
+  }
+
+  .hero-text {
+    padding-bottom: 20px; /* Ensure there's space for buttons */
+  }
+
+  .custom-btn {
+    width: 100%; /* Buttons take full width on smaller screens */
+    margin-top: 10px;
+  }
+}
+
+/* For very small mobile screens */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text h6 {
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    margin-top: 10px;
+  }
+
+  .custom-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/*---------------------------------------
+  EVENT-DETAILS    
+-----------------------------------------*/
+
+.event-details {
+  padding: 80px 0;
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+}
+
+.event-details .section-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.event-details .section-subtitle {
+  font-size: 1.1rem;
+  color: #b3b3b3;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.detail-item {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.detail-item:hover {
+  transform: translateY(-5px);
+  background-color: #292929;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+.detail-item::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(255, 111, 97, 0.3), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.detail-item:hover::after {
+  opacity: 1;
+}
+
+.detail-item .detail-icon {
+  font-size: 2.5rem;
+  color: #ff6f61;
+  margin-bottom: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.detail-item:hover .detail-icon {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.detail-title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+}
+
+.detail-text {
+  font-size: 1rem;
+  color: #cfcfcf;
+  z-index: 1;
+  position: relative;
+}
+
+/* Call-to-Action Button */
+.event-details .cta .btn {
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  background-color: #ff6f61;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-details .cta .btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: left 0.3s ease;
+}
+
+.event-details .cta .btn:hover::after {
+  left: 100%;
+}
+
+.event-details .cta .btn:hover {
+  background-color: #e05a50;
+  transform: scale(1.05);
+}
+
+/* Add Padding on Small and Medium Screens */
+@media (max-width: 991px) {
+  .event-details {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/*---------------------------------------
+  UPCOMING EVENTS            
+-----------------------------------------*/
+
+.upcoming-events-section {
+  padding: 60px 0;
+  background-color: #090909;
+  color: #fff;
+}
+
+.event-box {
+  background: #fff;
+  color: #333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.event-image-container {
+  height: 220px;
+  overflow: hidden;
+}
+
+.event-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-box:hover .event-thumbnail {
+  transform: scale(1.1);
+}
+
+.event-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.event-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.event-divider {
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(to right, #007bff, #00ffbf);
+  margin: 10px auto;
+}
+
+.event-meta {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.event-meta li {
+  margin: 8px 0;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  background: linear-gradient(to right, #007bff, #00ffbf);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.action-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #00ffbf, #007bff);
+}
+
+/* EVENT STATUS TAG */
+.event-status-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #007bff;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.event-status-tag.past {
+  background: #dc3545; /* Red for past events */
+}
+
+.event-status-tag.upcoming {
+  background: #28a745; /* Green for upcoming events */
+}
+
+.event-image-container {
+  position: relative; /* Required for tag positioning */
+  height: 220px;
+  overflow: hidden;
+}

@@ -1,0 +1,140 @@
+/* 
+-- Navbar --  
+*/
+.cstm-navbar {
+  background-color: #0a0a0a;
+  padding: 14px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.brand-highlight {
+  color: #007bff;
+}
+
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: auto 20px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fbfb00 !important;
+  transform: translateY(-2px);
+}
+
+.navbar-nav.ms-auto .nav-item {
+  margin-left: 20px;
+}
+
+.btn-login,
+.btn-register {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-login {
+  background-color: #007bff !important;
+  color: #fff !important;
+  border: none;
+}
+
+.btn-login:hover {
+  background-color: #0056b3 !important;
+  color: #fbfb00 !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-register {
+  background: linear-gradient(45deg, #006fce, #00aaff);
+  color: #fff !important;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-register:hover {
+  color: #fbfb00 !important;
+  background: linear-gradient(45deg, #005bb5, #00bfff);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.profile-pic {
+  width: 45px;
+  height: 45px;
+  border: 3px solid #007bff;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-pic:hover {
+  border-color: #fbfb00;
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #b3b3b3;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* 
+---Responsive---
+ */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link,
+  .btn-login,
+  .btn-register {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .profile-dropdown .profile-pic {
+    width: 40px;
+    height: 40px;
+  }
+}

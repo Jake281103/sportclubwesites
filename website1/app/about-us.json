@@ -1,0 +1,24 @@
+{
+  "welcomeSection": {
+    "title": "Welcome to AUS Sport Club!",
+    "description": "At AUS Sport Club, we are dedicated to promoting fitness, health, and sportsmanship in our community. Our mission is to provide a supportive environment for individuals of all skill levels to achieve their fitness goals. Whether you're a beginner or an experienced athlete, we offer a variety of programs and activities designed to help you succeed.",
+    "values": "We believe in the power of teamwork, discipline, and perseverance. Our values include inclusivity, respect, and a commitment to excellence in every aspect of our training and community-building efforts. Join us as we build a stronger, healthier future together."
+  },
+  "teamSection": {
+    "title": "Meet Our Team",
+    "members": [
+      {
+        "name": "Mary Yan",
+        "role": "Yoga Instructor",
+        "description": "Mary specializes in yoga and mindfulness, helping members find balance and flexibility in their routines.",
+        "image": "public/images/team/team-image.jpg"
+      },
+      {
+        "name": "Catherina",
+        "role": "Body Trainer",
+        "description": "Catherina is an expert in strength training, helping individuals build muscle, endurance, and confidence.",
+        "image": "public/images/team/team-image01.jpg"
+      }
+    ]
+  }
+}

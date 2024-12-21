@@ -1,0 +1,238 @@
+/* Events Section */
+.past-events-section {
+  margin-top: 20px;
+  padding: 60px 0;
+  background-color: var(--soft-tan);
+  font-family: "Arial", sans-serif;
+}
+
+.past-events-section h2 {
+  text-align: center;
+  color: var(--vivid-purple);
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.section-heading {
+  font-size: var(--font-size-h2);
+}
+
+.section-description {
+  font-size: var(--font-size-h4);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Event card container */
+.event-card {
+  background-color: var(--pure-white);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.05);
+}
+
+/* Event status styles */
+.event-status {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.event-status .tag {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.event-status .past {
+  background-color: #dc3545;
+}
+
+/* Event card image */
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  transition: opacity 0.3s ease;
+}
+
+.event-card img:hover {
+  opacity: 0.9;
+}
+
+/* Event card content */
+.event-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.event-content h3 {
+  font-size: 1.6rem;
+  color: #4a4a4a;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.event-content p {
+  font-size: 1rem;
+  color: #666;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.event-content p i {
+  color: var(--bright-blue);
+  margin-right: 12px;
+}
+
+.event-content p a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.event-content p a:hover {
+  color: var(--vivid-purple);
+}
+
+/* Button Styles */
+
+.details-btn {
+  width: 100%;
+  padding: 12px 18px;
+  background-color: var(--bright-blue);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: var(--vivid-purple);
+}
+
+/* Responsive Designs */
+@media (max-width: 768px) {
+  .event-card {
+    margin-bottom: 20px;
+  }
+
+  .event-content {
+    padding: 15px;
+  }
+
+  .event-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .event-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Feedback Section */
+.event-feedback-section {
+  background-color: #fdf6e3;
+  padding: 60px 0;
+}
+
+.event-feedback-section h2 {
+  text-align: center;
+  color: var(--vivid-purple);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.feedback-description {
+  text-align: center;
+  color: #000;
+  font-size: var(--font-size-h4);
+  margin-bottom: 40px;
+}
+
+/* Feedback Grid Layout */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+}
+
+.feedback-item {
+  background-color: var(--pure-white);
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 350px;
+  text-align: center;
+}
+
+.feedback-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-avatar {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  border: 3px solid #f1f1f1;
+}
+
+.feedback-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Feedback Text Styling */
+.feedback-item p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.feedback-item span {
+  display: block;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .feedback-grid {
+    grid-template-columns: 1fr;
+  }
+}

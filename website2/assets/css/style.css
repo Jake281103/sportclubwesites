@@ -1,0 +1,472 @@
+/****** 
+    Typography & Color Schemes
+******/
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../../dist/fonts/Poppins/Poppins-Regular.ttf") format("woff2"),
+    url("../../dist/fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../dist/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../../dist/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../../dist/fonts/Oswald-Regular.woff2") format("woff2"),
+    url("../../dist/fonts/Oswald-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../dist/libraries/fontawesome-free-6.7.1-web/webfonts/fa-regular-400.woff2")
+      format("woff2"),
+    url("../../dist/libraries/fontawesome-free-6.7.1-web/webfonts/fa-regular-400.ttf")
+      format("tff");
+}
+
+:root {
+  --uno-color: #fff;
+  --dos-color: #090909;
+  --tres-color: #fbfb00;
+  --cuatro-color: #d2b48c;
+  --cinco-color: #007bff;
+
+  --text-primary: var(--dos-color);
+  --text-secondary: var(--cuatro-color);
+  --bg-primary: var(--uno-color);
+  --bg-secondary: var(--cinco-color);
+
+  --h1-f-s: clamp(32px, 5vw, 40px);
+  --h2-f-s: clamp(28px, 4vw, 32px);
+  --h3-f-s: clamp(24px, 3.5vw, 28px);
+  --h4-f-s: clamp(20px, 3vw, 26px);
+  --h5-f-s: clamp(18px, 2.5vw, 24px);
+  --h6-f-s: clamp(16px, 2vw, 22px);
+
+  --body-line-height: 1.6;
+  --heading-line-height: 1.3;
+  --section-padding: 60px;
+  --element-margin: 20px;
+}
+
+/****** 
+    Fallback Fonts 
+******/
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.heading {
+  font-family: "Poppins", Verdana, sans-serif;
+}
+
+h4,
+h5,
+h6,
+.accent-text {
+  font-family: "Oswald", Georgia, serif;
+}
+
+/****** 
+    General 
+******/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+}
+
+body {
+  line-height: var(--body-line-height);
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+a {
+  color: var(--cinco-color);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+.heading {
+  font-family: "Poppins", sans-serif;
+  line-height: var(--heading-line-height);
+  margin-bottom: var(--element-margin);
+}
+
+h4,
+h5,
+h6,
+.accent-text {
+  font-family: "Oswald", sans-serif;
+  line-height: var(--heading-line-height);
+  margin-bottom: var(--element-margin);
+}
+
+h1 {
+  font-size: var(--h1-f-s);
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--h2-f-s);
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: var(--h3-f-s);
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+[data-aos] {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+/****** 
+    Utilities 
+******/
+
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+.pt-1 {
+  padding-top: 10px;
+}
+.pt-2 {
+  padding-top: 20px;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.section-dark {
+  background-color: var(--bg-secondary);
+  color: var(--uno-color);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-muted {
+  color: var(--text-secondary);
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-auto {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/****** 
+    Form 
+******/
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  border: 1px solid var(--cuatro-color);
+  border-radius: 4px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--cinco-color);
+  outline: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input.error {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+input.success {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+/****** 
+    Buttons 
+******/
+
+.button-1 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--uno-color);
+  background-color: var(--cinco-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-1:hover {
+  background-color: var(--tres-color);
+}
+
+.button-2 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--cinco-color);
+  background-color: transparent;
+  border: 2px solid var(--cinco-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-2:hover {
+  background-color: var(--cinco-color);
+  color: var(--uno-color);
+}
+
+.button-3 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--uno-color);
+  background: linear-gradient(45deg, var(--cinco-color), var(--tres-color));
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-3:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-4 {
+  display: inline-block;
+  padding: 12px 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--uno-color);
+  background-color: var(--cinco-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+.button-4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, var(--tres-color), transparent);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.button-4:hover {
+  color: var(--dos-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-4:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.button-5 {
+  display: inline-block;
+  padding: 12px 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--uno-color);
+  background-color: transparent;
+  border: 2px solid var(--cinco-color);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.button-5::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cinco-color);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: -1;
+}
+
+.button-5:hover {
+  color: var(--dos-color);
+  border-color: var(--tres-color);
+}
+
+.button-5:hover::after {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.button-5:focus {
+  outline: none;
+}
+
+.button-1:focus,
+.button-2:focus,
+.button-3:focus,
+.button-4:focus,
+.button-5:focus,
+a:focus {
+  outline: 3px solid var(--cinco-color);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+/****** 
+    Transition 
+******/
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/****** 
+    Responsive 
+******/
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: calc(var(--h1-f-s) - 8px);
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-6 {
+    max-width: 100%;
+  }
+
+  .button-1,
+  .button-2,
+  .button-3 {
+    width: 100%;
+  }
+}

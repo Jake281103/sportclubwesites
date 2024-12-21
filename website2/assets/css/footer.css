@@ -1,0 +1,130 @@
+/****** 
+Footer Section
+******/
+.footer {
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Title styling for sections */
+.footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Links and Icons Styling */
+.footer-links,
+.footer-social .social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li,
+.social-icons li {
+  margin: 10px 0;
+}
+
+.footer-links a,
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.social-icons a:hover {
+  color: #fbfb00;
+}
+
+/* Social Icons Section */
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.social-icon {
+  font-size: 20px;
+  color: #fff;
+  background-color: #d2b48c;
+  padding: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 35px;
+}
+
+.social-icon:hover {
+  background-color: #007bff;
+  transform: scale(1.1);
+}
+
+.social-icon i {
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover i {
+  color: #fbfb00;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #b3b3b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-social {
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icon {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .footer-bottom {
+    padding-top: 15px;
+  }
+}

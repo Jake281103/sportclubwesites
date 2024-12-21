@@ -1,0 +1,224 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background: var(--pure-white);
+  color: var(--main-brown);
+}
+
+/* Hero Section */
+
+.hero-section {
+  background: linear-gradient(to left, var(--soft-tan), var(--main-brown));
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--pure-white);
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+}
+
+.hero-section p {
+  margin: 20px 0;
+}
+
+.cta-btn {
+  background: var(--bright-blue);
+  color: var(--pure-white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: var(--vivid-purple);
+}
+
+/* Events Section */
+.events-section {
+  padding: 60px 0;
+  background-color: #fdf6e3;
+}
+
+.events-section h2 {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Event card container */
+.event-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Event status  styles */
+.event-status {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.event-status .tag {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.event-status .upcoming {
+  background-color: #28a745;
+}
+
+.event-status .past {
+  background-color: #dc3545;
+}
+
+/* Event card styles */
+.event-card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+/* Event card image */
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Event card content */
+.event-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.event-content h3 {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+  margin-bottom: 10px;
+}
+
+.event-content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.event-content p i {
+  color: var(--bright-blue);
+  margin-right: 10px;
+}
+
+/* Register button styles */
+.register-btn,
+.details-btn {
+  display: inline-block;
+  width: 49%;
+  background-color: var(--bright-blue);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: var(--vivid-purple);
+  transform: scale(1.05);
+}
+
+.details-btn {
+  background-color: var(--vivid-purple);
+}
+
+.details-btn:hover {
+  background-color: var(--bright-blue);
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .events-section h2 {
+    font-size: 2rem;
+  }
+  .event-card {
+    margin-bottom: 20px;
+  }
+  .event-content h3 {
+    font-size: 1.3rem;
+  }
+  .event-content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Highlights Section */
+.highlights-section {
+  padding: 60px 0;
+  background-color: #fff8f0; /* Soft tan background */
+}
+
+.highlights-section h2 {
+  font-size: var(--font-size-h2);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.highlights-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+
+.highlight-item {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-icon {
+  font-size: 2.5rem;
+  color: #d2b48c;
+  margin-bottom: 10px;
+}

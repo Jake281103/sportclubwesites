@@ -1,0 +1,60 @@
+/* Footer Section */
+.footer {
+  background-color: var(--main-brown);
+  color: var(--pure-white);
+  padding: 40px 0;
+  font-size: 16px;
+  line-height: var(--line-height-body);
+}
+
+.footer a {
+  color: var(--soft-tan);
+  text-decoration: none;
+  transition: color var(--duration-transition);
+}
+
+.footer a:hover {
+  color: var(--highlight-accent);
+}
+
+.single-footer-widget h2 {
+  color: var(--text-main);
+  margin-bottom: 20px;
+  font-size: var(--font-size-h4);
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter-form .form-control {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: var(--radius-border);
+  border: none;
+}
+
+.newsletter-form .btn-subscribe {
+  background-color: var(--highlight-accent);
+  color: var(--pure-white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-border);
+  cursor: pointer;
+  transition: background-color var(--duration-transition);
+}
+
+.newsletter-form .btn-subscribe:hover {
+  background-color: var(--soft-tan);
+}
+
+.footer-social a {
+  font-size: 18px;
+  margin-right: 10px;
+}

@@ -1,0 +1,114 @@
+/* Contact Us Section */
+.contact-us-section {
+  background-color: var(--soft-tan);
+  color: var(--bright-blue);
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: var(--font-size-h2);
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--vivid-purple);
+}
+
+.section-description {
+  text-align: center;
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-body);
+  margin-bottom: 40px;
+}
+
+.contact-form-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-info h3,
+.contact-info p,
+.contact-info div {
+  margin: 15px 0;
+
+  font-size: var(--font-size-h5);
+}
+
+.contact-image {
+  margin-top: 20px;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--main-brown);
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--main-brown);
+  border-radius: var(--radius-border);
+  font-size: var(--font-size-h6);
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.submit-btn {
+  background-color: var(--main-brown);
+  color: var(--pure-white);
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--radius-border);
+  cursor: pointer;
+  transition: all var(--duration-transition) ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: var(--highlight-accent);
+}
+
+.contact-info h3 {
+  color: var(--main-brown);
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 24px;
+  color: var(--main-brown);
+  transition: transform var(--duration-transition) ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: var(--highlight-accent);
+}

@@ -1,0 +1,138 @@
+/******
+News & Announcement 
+******/
+
+.news-announcements {
+  background-color: #090909;
+  padding: 60px 0;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+}
+
+.news-card {
+  background-color: #121212;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 255, 0, 0.2);
+}
+
+.news-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.news-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.news-card:hover .news-image {
+  transform: scale(1.1);
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.news-desc {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fbfb00;
+  color: #090909;
+}
+
+/******
+Featured Stories
+******/
+
+.featured-stories {
+  background-color: #090909;
+  padding: 60px 0;
+}
+
+.story-card {
+  background-color: #121212;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(255, 255, 0, 0.2);
+}
+
+.story-image-wrapper {
+  flex: 0 0 150px;
+  overflow: hidden;
+}
+
+.story-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.story-card:hover .story-image {
+  transform: scale(1.1);
+}
+
+.story-content {
+  padding: 20px;
+}
+
+.story-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.story-desc {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fbfb00;
+  color: #090909;
+}

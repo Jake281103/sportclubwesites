@@ -1,0 +1,49 @@
+/*---------------------------------------
+   LOGIN              
+-----------------------------------------*/
+
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  margin-top: 10%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+  border-radius: 10px 0 0 10px;
+  background: url("../public/images/auth/auth-1.png") no-repeat center center;
+  background-size: cover;
+  filter: brightness(0.6);
+}
+
+.form-container {
+  border-radius: 0 10px 10px 0;
+  padding: 2rem;
+  background-color: #f7f8f7;
+}
+
+.form-container h2 {
+  font-weight: bold;
+  color: #252629;
+}
+
+.form-container .btn-primary {
+  background-color: #a47800;
+  border: none;
+}
+
+.form-container .btn-primary:hover {
+  background-color: #c60a11;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: #5d5d5d;
+}
+
+.form-container a:hover {
+  color: #a47800;
+}

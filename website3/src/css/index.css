@@ -1,0 +1,160 @@
+/* Background Overlay Section */
+.bg-overlay-section {
+  position: relative;
+  height: 100vh;
+  background: url("../../public/images/welcome-page/image3.png") no-repeat
+    center center/cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-learn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-start {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-learn:hover {
+  background-color: #0056b3;
+}
+
+.btn-start:hover {
+  background-color: #1e7e34;
+}
+
+/* Events Section Styling */
+.events-section {
+  background-color: #2d1f14;
+}
+
+.filter-events-box,
+.upcoming-events-box {
+  background-color: var(--soft-tan);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.filter-events-box h4,
+.upcoming-events-box h4 {
+  color: #fff;
+}
+
+.filter-events-box label,
+.filter-events-box .btn,
+.upcoming-events-box .btn {
+  color: #fff;
+}
+
+.filter-events-box .form-control {
+  border-radius: 5px;
+}
+
+.event-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h6 {
+  color: #000;
+  font-weight: bold;
+}
+
+.event-card .btn {
+  font-size: 0.8rem;
+}
+
+/* Innovative Section Styling */
+.innovative-section {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.innovative-image img {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.innovative-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.innovative-content p {
+  font-size: 1.1rem;
+}
+
+.stats-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.stat-item {
+  width: 100px;
+}
+
+.stat-item h4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.innovative-section .btn {
+  font-size: 1.2rem;
+}

@@ -1,0 +1,85 @@
+/*---------------------------------------
+   REGISTER              
+-----------------------------------------*/
+
+body {
+  background-color: #090806;
+  font-family: Arial, sans-serif;
+}
+
+.register-container {
+  margin-top: 10%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.image-container {
+  border-radius: 0 10px 10px 0;
+  background: url("../public/images/auth/auth-2.png") no-repeat center center;
+  background-size: cover;
+}
+
+.form-container {
+  border-radius: 10px 0 0 10px;
+  padding: 2.5rem;
+  background-color: #f7f8f7;
+}
+
+.form-container h2 {
+  font-weight: bold;
+  color: #252629;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.form-container .form-label {
+  font-weight: bold;
+  color: #5d5d5d;
+}
+
+.form-container .form-control {
+  border: 1px solid #5d5d5d;
+  border-radius: 5px;
+}
+
+.form-container .form-control:focus {
+  border-color: #a47800;
+  box-shadow: 0 0 5px rgba(164, 120, 0, 0.5);
+}
+
+.form-container .btn-primary {
+  background-color: #a47800;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-container .btn-primary:hover {
+  background-color: #c60a11;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: #5d5d5d;
+  font-weight: bold;
+}
+
+.form-container a:hover {
+  color: #a47800;
+  text-decoration: underline;
+}
+
+.form-container p {
+  font-size: 0.9rem;
+  color: #959494;
+}
+
+.form-container .d-grid {
+  margin-top: 1.5rem;
+}
+
+.form-container .mt-4 {
+  margin-top: 2rem !important;
+}

@@ -1,0 +1,456 @@
+/*-------------------------------------
+    1. General CSS (Reset Code)
+--------------------------------------*/
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../public/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../public/fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../../public/fonts/Bebas_Neue/BebasNeue-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*-------------------------------------
+    2. Root Variables
+--------------------------------------*/
+
+:root {
+  --main-brown: #6b4226;
+  --pure-white: #ffffff;
+  --soft-tan: #d2b48c;
+  --vivid-purple: #8a2be2;
+  --bright-blue: #007bff;
+
+  --text-main: var(--pure-white);
+  --text-accent: var(--soft-tan);
+  --background-main: var(--main-brown);
+  --background-accent: var(--bright-blue);
+  --highlight-accent: var(--vivid-purple);
+
+  --shadow-color: rgba(107, 66, 38, 0.2);
+
+  --font-size-h1: clamp(32px, 5vw, 40px);
+  --font-size-h2: clamp(28px, 4vw, 32px);
+  --font-size-h3: clamp(24px, 3.5vw, 28px);
+  --font-size-h4: clamp(20px, 3vw, 26px);
+  --font-size-h5: clamp(18px, 2.5vw, 24px);
+  --font-size-h6: clamp(16px, 2vw, 22px);
+
+  --line-height-body: 1.6;
+  --line-height-heading: 1.3;
+  --padding-section: 60px;
+  --margin-element: 20px;
+  --radius-border: 8px;
+  --duration-transition: 0.3s;
+}
+
+/*-------------------------------------
+    3. General Styles
+--------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  line-height: var(--body-line-height);
+  width: 100%;
+}
+
+a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  transition: color var(--transition-duration);
+}
+
+a:hover {
+  color: var(--blue-color);
+}
+
+h1,
+h2,
+h3,
+.heading {
+  font-family: "Montserrat", sans-serif;
+  line-height: var(--heading-line-height);
+  margin-bottom: var(--element-margin);
+  color: var(--text-primary);
+}
+
+h4,
+h5,
+h6,
+.accent-text {
+  font-family: "Bebas Neue", sans-serif;
+  line-height: var(--heading-line-height);
+  margin-bottom: var(--element-margin);
+  color: var(--text-secondary);
+}
+
+h1 {
+  font-size: var(--h1-f-s);
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--h2-f-s);
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: var(--h3-f-s);
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+
+/*-------------------------------------
+    4. Utility Classes
+--------------------------------------*/
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
+}
+
+.btn-primary {
+  background-color: var(--highlight-color);
+  color: var(--white-color);
+  border: 2px solid var(--highlight-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+/*-------------------------------------
+    5. Responsive Typography
+--------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--heading-line-height);
+  margin-bottom: var(--element-margin);
+}
+
+p {
+  margin-bottom: var(--element-margin);
+}
+
+/****** 
+    Utilities 
+******/
+
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+.pt-1 {
+  padding-top: 10px;
+}
+.pt-2 {
+  padding-top: 20px;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: var(--section-spacing) 0;
+}
+
+.section-dark {
+  background-color: var(--secondary-purple);
+  color: var(--primary-brown);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-muted {
+  color: var(--accent-tan);
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-auto {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/****** 
+    Form Styles 
+******/
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  border: 1px solid var(--accent-purple); /* Highlight border */
+  border-radius: var(--border-radius);
+  background-color: var(--background-white);
+  color: var(--primary-brown);
+  box-sizing: border-box;
+  transition: border-color var(--transition-duration);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--highlight-blue); /* Focus state */
+  outline: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: var(--font-size-h5);
+  background-color: var(--primary-brown);
+  color: var(--pure-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-duration);
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--accent-tan); /* Hover state */
+}
+
+input.error {
+  border-color: #dc3545; /* Error color */
+  background-color: #f8d7da;
+}
+
+input.success {
+  border-color: #28a745; /* Success color */
+  background-color: #d4edda;
+}
+
+/*-------------------------------------
+        12. Contact
+--------------------------------------*/
+.contact {
+  background: #2a2d54;
+}
+.footer-top {
+  padding: 112px 0 72px;
+}
+
+/*.footer-logo*/
+.footer-logo a,
+.footer-logo a:hover,
+.footer-logo a:focus {
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.single-footer-widget p {
+  font-size: 14px;
+  color: #eeeff6;
+  max-width: 300px;
+  margin: 40px 0 20px;
+}
+.footer-contact p {
+  margin: 0;
+  color: #d1d7e9;
+}
+/*.footer-logo*/
+
+.single-footer-widget {
+  margin-bottom: 40px;
+}
+.single-footer-widget h2 {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 43px;
+}
+.single-footer-widget ul li {
+  display: inherit;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.single-footer-widget ul li:hover {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+.single-footer-widget ul li a {
+  font-size: 14px;
+  color: #cfd0e3;
+  font-weight: 300;
+  padding-bottom: 13px;
+}
+.single-footer-widget ul li a span {
+  text-transform: lowercase;
+}
+.footer-newsletter p {
+  color: #aeafc2;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 0 15px;
+}
+/*hm-foot-email*/
+.hm-foot-email {
+  position: relative;
+}
+.foot-email-box .form-control {
+  background: #26294d;
+  display: block;
+  padding: 15px 20px;
+  outline: 0 !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 0;
+}
+.foot-email-box input[type="text"] {
+  font-size: 12px;
+  color: #666c81;
+  font-weight: 300;
+}
+.foot-email-subscribe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background: transparent;
+  color: #666c81;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foot-email-box .form-control:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+/*hm-foot-email*/
+/*.footer-copyright */
+.footer-copyright {
+  padding: 20px 0 17px;
+  border-top: 1px solid #434859;
+}
+.footer-copyright p,
+.footer-copyright p a {
+  color: #a8a9bf;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.footer-social {
+  text-align: right;
+}
+.footer-social a i {
+  color: #fff;
+  opacity: 0.4;
+  font-size: 14px;
+  margin-left: 16px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-social i:hover {
+  opacity: 0.7;
+}
+/*.footer-copyright */

@@ -1,0 +1,221 @@
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--pure-white);
+  background-color: var(--soft-tan);
+  margin: 0;
+}
+
+header.about-header {
+  position: relative;
+  background: url("../../public/images/about/banner1.png") center/cover
+    no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--pure-white);
+}
+
+header.about-header .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+.about-section,
+.team-section,
+.cta-section {
+  padding: 60px 20px;
+}
+
+.about-section h2,
+.cta-section h2 {
+  color: var(--soft-tan);
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: var(--font-size-h2);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--bright-blue);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* About Section */
+
+.about-section {
+  padding: 80px 20px;
+  background-color: var(--main-brown);
+  color: var(--pure-white);
+  text-align: center;
+}
+
+.intro-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.section-title {
+  font-size: var(--font-size-h2);
+  margin-bottom: 20px;
+  color: var(--soft-tan);
+  text-transform: uppercase;
+}
+
+.section-description {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+.highlight {
+  color: var(--bright-blue);
+  font-weight: bold;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--soft-tan);
+  color: var(--main-brown);
+  border-radius: var(--radius-border);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform var(--duration-transition),
+    box-shadow var(--duration-transition);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--highlight-accent);
+  color: var(--pure-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 1.8rem;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: var(--main-brown);
+  font-size: var(--font-size-h3);
+}
+
+.card p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+}
+
+.about-image {
+  margin-top: 50px;
+}
+
+.community-image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: var(--radius-border);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow var(--duration-transition);
+}
+
+.community-image:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Team Section */
+
+.team-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.team-member img:hover {
+  transform: scale(1.1) translateY(-10px);
+}
+
+.team-member h3 {
+  font-size: var(--font-size-h4);
+  color: var(--bright-blue);
+}
+
+/* Call to Action Section */
+
+.cta-section {
+  background-color: var(--highlight-accent);
+  text-align: center;
+}
+
+.cta-section .btn-cta {
+  background-color: var(--soft-tan);
+  color: var(--pure-white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-section h2 {
+  font-size: var(--font-size-h2);
+}
+
+.cta-section p {
+  color: var(--pure-white);
+  font-size: var(--font-size-h5);
+  margin: 20px 0;
+}
+
+.cta-section .btn-cta:hover {
+  background-color: var(--bright-blue);
+  transform: scale(1.1) translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--main-brown);
+  color: var(--pure-white);
+}

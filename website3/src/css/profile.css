@@ -1,0 +1,96 @@
+/* User Profile Styling */
+.user-profile {
+  background-color: #d2b48c;
+}
+
+.user-profile h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.user-profile .form-label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.user-profile .form-control,
+.user-profile .form-select {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.user-profile .form-control:focus,
+.user-profile .form-select:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+}
+
+.user-profile button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.user-profile .btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.user-profile .btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.user-profile .btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+.user-profile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-profile ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.user-profile ul li a:hover {
+  color: #0056b3;
+}
+
+/* Register and Managing Events Section Styling */
+
+.rme-section {
+  max-width: 900px;
+  padding-bottom: 100px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.text-primary {
+  color: #007bff !important;
+}

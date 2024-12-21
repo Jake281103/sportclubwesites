@@ -1,0 +1,109 @@
+/* Navbar Styling */
+.navbar {
+  background-color: var(--main-brown);
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  color: var(--pure-white);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggler-icon {
+  background-color: var(--pure-white);
+  width: 30px;
+  height: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  background-color: var(--pure-white);
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* Navbar Links */
+.nav-link {
+  font-family: "Lato", sans-serif;
+  color: var(--pure-white);
+  font-size: 1rem;
+  margin: 0 10px;
+  transition: color var(--duration-transition) ease;
+}
+
+.nav-link:hover {
+  color: var(--soft-tan);
+}
+
+.navbar img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  background-color: var(--background-accent);
+  border: none;
+  border-radius: var(--radius-border);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  font-family: "Lato", sans-serif;
+  color: var(--pure-white);
+  font-size: 1rem;
+  transition: background-color var(--duration-transition) ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--pure-white);
+  color: var(--main-brown);
+}
+
+/* Profile Picture */
+.profile-pic {
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  border: 1px solid var(--soft-tan);
+  background-color: var(--background-main);
+  color: var(--text-main);
+}
+
+.dropdown-item {
+  color: var(--text-main);
+  padding: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--highlight-accent);
+  color: var(--pure-white);
+}
+
+.dropdown-divider {
+  border-color: var(--soft-tan);
+}

@@ -1,0 +1,32 @@
+{
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower individuals through sports, fostering teamwork, fitness, and fun while encouraging personal growth."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be a recognized leader in promoting health, unity, and sportsmanship within the community."
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "Respect, integrity, innovation, and teamwork guide us in building a strong and welcoming environment."
+    },
+    "team": [
+      {
+        "name": "John Doe",
+        "role": "Head Coach",
+        "image": "public/images/about/coach1.png"
+      },
+      {
+        "name": "Sarah Smith",
+        "role": "Event Coordinator",
+        "image": "public/images/about/coach2.png"
+      },
+      {
+        "name": "Michael Brown",
+        "role": "Fitness Trainer",
+        "image": "public/images/about/coach3.png"
+      }
+    ]
+  }
+  
